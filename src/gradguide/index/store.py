@@ -125,12 +125,19 @@ def sync_index(docs_dir: Path, index_dir: Path, embedder: Embedder, max_tokens: 
         return index, SyncReport(kept=len(index.chunks), loaded_from_cache=True)
 
     reusable: dict[str, np.ndarray] = {}
+    old_text: dict[str, str] = {}
     if previous_manifest and previous_manifest.get("embedder") == embedder.name:
         old = Index.load(index_dir)
         reusable = {c.chunk_id: old.vectors[i] for i, c in enumerate(old.chunks)}
+        old_text = {c.chunk_id: c.search_text for c in old.chunks}
 
     chunks = chunk_corpus(load_folder(docs_dir), max_tokens, overlap_tokens, tok, load_manifest(docs_dir))
-    to_embed = [c for c in chunks if c.chunk_id not in reusable]
+    # a vector is reused only if the embedded text (title + heading + text) is unchanged: a new title in
+    # sources.toml keeps the chunk id but changes what was embedded
+    to_embed = [c for c in chunks
+                if c.chunk_id not in reusable or old_text.get(c.chunk_id) != c.search_text]
+    for c in to_embed:
+        reusable.pop(c.chunk_id, None)
     fresh = embedder.embed([c.search_text for c in to_embed]) if to_embed else None
     fresh_by_id = {c.chunk_id: fresh[i] for i, c in enumerate(to_embed)} if fresh is not None else {}
 

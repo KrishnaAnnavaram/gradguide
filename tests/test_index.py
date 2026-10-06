@@ -42,6 +42,22 @@ def test_deleted_document_is_removed(tmp_path, embedder):
     assert all(c.source != "assistantships.html" for c in index.chunks)
 
 
+def test_new_title_in_source_manifest_reembeds_that_document(tmp_path, embedder):
+    # the chunk id ignores the title, but the embedded text includes it: a stale vector must not be reused
+    docs = _copy_docs(tmp_path)
+    index, _ = sync_index(docs, tmp_path / "idx", embedder)
+    n_registration = sum(c.source == "registration.md" for c in index.chunks)
+    manifest = docs / "sources.toml"
+    manifest.write_text(manifest.read_text(encoding="utf-8").replace(
+        'path = "registration.md"\n', 'path = "registration.md"\ntitle = "Course Registration Rules"\n'),
+        encoding="utf-8")
+    updated, report = sync_index(docs, tmp_path / "idx", embedder)
+    assert report.added == n_registration and report.removed == 0
+    assert embedder.batches[-1] == n_registration
+    for chunk, vector in zip(updated.chunks, updated.vectors):
+        assert (vector == embedder.embed([chunk.search_text])[0]).all(), chunk.chunk_id
+
+
 def test_changing_embedder_reembeds_everything(tmp_path):
     first = CountingEmbedder()
     sync_index(SAMPLE_DOCS, tmp_path / "idx", first)
