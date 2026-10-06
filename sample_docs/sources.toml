@@ -1,0 +1,45 @@
+# Source manifest: who owns each document and how often it must be re-checked.
+# `gradguide sources` lists these and flags documents past their refresh cadence.
+
+[[source]]
+path = "degree_requirements.md"
+owner = "Graduate school - academic policy"
+refresh_days = 365
+updated = "2026-07-01"
+
+[[source]]
+path = "registration.md"
+owner = "Registrar"
+refresh_days = 180
+updated = "2026-08-15"
+
+[[source]]
+path = "graduation.md"
+owner = "Graduate records office"
+refresh_days = 180
+updated = "2026-06-20"
+
+[[source]]
+path = "international_students.md"
+owner = "International student office"
+refresh_days = 90
+updated = "2026-05-10"
+
+[[source]]
+path = "faq_financial_aid.json"
+owner = "Financial aid office"
+refresh_days = 180
+updated = "2026-09-01"
+
+[[source]]
+path = "assistantships.html"
+title = "Graduate Assistantships"
+owner = "Graduate school"
+refresh_days = 365
+updated = "2026-04-12"
+
+[[source]]
+path = "advising_contacts.txt"
+owner = "Graduate advising"
+refresh_days = 90
+updated = "2026-08-01"

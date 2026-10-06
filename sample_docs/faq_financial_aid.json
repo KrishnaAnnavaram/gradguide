@@ -1,0 +1,29 @@
+{
+  "title": "Financial Aid FAQ",
+  "faqs": [
+    {
+      "question": "How many credit hours do I need for federal student loans?",
+      "answer": "Graduate students must be enrolled at least half-time, which is 5 graduate credit hours in a fall or spring term, to receive federal student loans."
+    },
+    {
+      "question": "When should I file the FAFSA?",
+      "answer": "File the FAFSA as soon as it opens on October 1 for the following academic year. The priority deadline for institutional aid is March 15."
+    },
+    {
+      "question": "What happens to my aid if I drop below half-time?",
+      "answer": "Dropping below half-time can cancel loan disbursements for the term and start the six-month grace period on existing loans. Talk to the financial aid office before dropping courses."
+    },
+    {
+      "question": "Do graduate assistantships affect my financial aid?",
+      "answer": "Yes. Assistantship tuition waivers and stipends count as resources and can reduce the amount of loans you are offered. Report a new assistantship to the financial aid office within 10 days."
+    },
+    {
+      "question": "How do I appeal a satisfactory academic progress suspension?",
+      "answer": "Submit the SAP appeal form with a personal statement and an academic plan signed by your advisor. Appeals are reviewed within 15 business days of submission, and the decision is sent to your university e-mail."
+    },
+    {
+      "question": "How can I contact the financial aid office?",
+      "answer": "E-mail finaid@example.edu or call (555) 010-0142, Monday to Friday, 8:00 a.m. to 5:00 p.m. Include your student ID number in e-mails, never your full social security number."
+    }
+  ]
+}

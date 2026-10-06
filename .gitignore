@@ -1,0 +1,30 @@
+# secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+
+# runtime artifacts: indexes, query logs, private documents, evaluation outputs
+/.gradguide/
+/data/
+/docs_private/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+eval_results*.json
+*.pdf
+*.xlsx
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/

@@ -1,0 +1,21 @@
+---
+title: Advising Contacts
+updated: 2026-08-01
+---
+# Who to Contact
+
+## Academic Advising
+
+Your academic advisor is listed in the student portal under "My Advisor". Advisors approve degree plans, remove advising holds and sign degree plan change forms. Book appointments through the advising scheduler at https://advising.example.edu/schedule or e-mail gradadvising@example.edu.
+
+## Graduate Records Office
+
+The graduate records office handles graduation applications, degree audits and thesis submission. E-mail gradrecords@example.edu or call (555) 010-0177.
+
+## International Student Office
+
+The international student office issues travel signatures and authorizes CPT, reduced course loads and OPT recommendations. E-mail intl@example.edu or visit during drop-in hours, Tuesday and Thursday, 1:00 p.m. to 4:00 p.m.
+
+## Student Support and Wellbeing
+
+For personal, medical or family emergencies that affect your studies, contact the dean of students office at deanofstudents@example.edu or (555) 010-0110. The counseling center offers free, confidential appointments to enrolled students.

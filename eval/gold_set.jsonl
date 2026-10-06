@@ -1,0 +1,35 @@
+{"id": "deg-01", "question": "How many credit hours do I need for a master's degree?", "relevant": [{"source": "degree_requirements.md", "heading": "Credit Hours"}]}
+{"id": "deg-02", "question": "How many hours can I transfer from another school?", "relevant": [{"source": "degree_requirements.md", "heading": "Credit Hours"}]}
+{"id": "deg-03", "question": "What does the thesis option involve compared with the non-thesis option?", "relevant": [{"source": "degree_requirements.md", "heading": "Thesis and Non-Thesis"}]}
+{"id": "deg-04", "question": "When do I have to file my degree plan?", "relevant": [{"source": "degree_requirements.md", "heading": "Degree Plan"}]}
+{"id": "deg-05", "question": "What happens if my GPA drops below 3.0?", "relevant": [{"source": "degree_requirements.md", "heading": "Academic Standing"}]}
+{"id": "deg-06", "question": "How long do I have to finish my master's?", "relevant": [{"source": "degree_requirements.md", "heading": "Time Limit"}]}
+{"id": "reg-01", "question": "How many credit hours count as full-time for graduate students?", "relevant": [{"source": "registration.md", "heading": "Full-Time Enrollment"}]}
+{"id": "reg-02", "question": "How do I remove the advising hold so I can register?", "relevant": [{"source": "registration.md", "heading": "Registration Holds"}]}
+{"id": "reg-03", "question": "What balance triggers a financial hold?", "relevant": [{"source": "registration.md", "heading": "Registration Holds"}]}
+{"id": "reg-04", "question": "Will I get a refund if I drop a course after the census date?", "relevant": [{"source": "registration.md", "heading": "Adding and Dropping"}]}
+{"id": "reg-05", "question": "Can I take a leave of absence and pause my studies?", "relevant": [{"source": "registration.md", "heading": "Leave of Absence"}]}
+{"id": "reg-06", "question": "How do I withdraw from all my courses?", "relevant": [{"source": "registration.md", "heading": "Withdrawing"}]}
+{"id": "grad-01", "question": "What is the deadline to apply for graduation and how much is the fee?", "relevant": [{"source": "graduation.md", "heading": "Graduation Application"}]}
+{"id": "grad-02", "question": "When must I submit my final thesis?", "relevant": [{"source": "graduation.md", "heading": "Thesis Submission"}]}
+{"id": "grad-03", "question": "If I finish in the summer, which commencement ceremony can I attend?", "relevant": [{"source": "graduation.md", "heading": "Commencement"}]}
+{"id": "grad-04", "question": "When will my diploma be mailed?", "relevant": [{"source": "graduation.md", "heading": "Diplomas"}]}
+{"id": "intl-01", "question": "How many online courses count toward full-time enrollment on an F-1 visa?", "relevant": [{"source": "international_students.md", "heading": "Maintaining Status"}]}
+{"id": "intl-02", "question": "When am I eligible for curricular practical training?", "relevant": [{"source": "international_students.md", "heading": "Curricular Practical Training"}]}
+{"id": "intl-03", "question": "When can I apply for OPT after my program ends?", "relevant": [{"source": "international_students.md", "heading": "Optional Practical Training"}]}
+{"id": "intl-04", "question": "Do I need a travel signature on my I-20 before going abroad?", "relevant": [{"source": "international_students.md", "heading": "Travel Signatures"}]}
+{"id": "fa-01", "question": "What is the minimum enrollment for federal student loans?", "relevant": [{"source": "faq_financial_aid.json", "heading": "federal student loans"}]}
+{"id": "fa-02", "question": "When is the FAFSA priority deadline?", "relevant": [{"source": "faq_financial_aid.json", "heading": "FAFSA"}]}
+{"id": "fa-03", "question": "Does an assistantship reduce my financial aid?", "relevant": [{"source": "faq_financial_aid.json", "heading": "assistantships affect"}]}
+{"id": "fa-04", "question": "How do I appeal a SAP suspension?", "relevant": [{"source": "faq_financial_aid.json", "heading": "appeal"}]}
+{"id": "fa-05", "question": "What is the phone number of the financial aid office?", "relevant": [{"source": "faq_financial_aid.json", "heading": "contact the financial aid"}]}
+{"id": "ga-01", "question": "Does a graduate assistantship come with a tuition waiver?", "relevant": [{"source": "assistantships.html", "heading": "Tuition Benefits"}]}
+{"id": "ga-02", "question": "What is the deadline to apply for a fall assistantship?", "relevant": [{"source": "assistantships.html", "heading": "How to Apply"}]}
+{"id": "ga-03", "question": "Who is eligible to be a teaching assistant?", "relevant": [{"source": "assistantships.html", "heading": "Eligibility"}]}
+{"id": "con-01", "question": "How do I book an appointment with my academic advisor?", "relevant": [{"source": "advising_contacts.txt", "heading": "Academic Advising"}]}
+{"id": "con-02", "question": "Who should I contact about a family emergency affecting my studies?", "relevant": [{"source": "advising_contacts.txt", "heading": "Student Support"}]}
+{"id": "neg-01", "question": "What time does the campus swimming pool open on weekends?", "answerable": false}
+{"id": "neg-02", "question": "Can I bring my dog to the library?", "answerable": false}
+{"id": "neg-03", "question": "What is the parking permit price for a motorcycle?", "answerable": false}
+{"id": "neg-04", "question": "Which dining hall serves vegan sushi?", "answerable": false}
+{"id": "neg-05", "question": "How do I reset my wifi router at home?", "answerable": false}

@@ -1,0 +1,7 @@
+<question>{question}</question>
+
+<passages>
+{passages}
+</passages>
+
+Answer the question using only these passages and cite them by id, like [1].

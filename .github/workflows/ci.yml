@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,api]"
+      - name: Unit tests (offline, no API keys)
+        run: pytest -q
+      - name: Offline end-to-end smoke run and evaluation
+        run: |
+          gradguide index
+          gradguide ask "When is the FAFSA priority deadline?"
+          gradguide eval --chunk-sizes 60,120,220
