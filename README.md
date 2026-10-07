@@ -9,7 +9,7 @@
 ![Hybrid recall@3](https://img.shields.io/badge/Hybrid_recall%403-1.000-1F3864?style=for-the-badge)
 ![Abstention accuracy](https://img.shields.io/badge/Abstention_accuracy-1.000_%2835_questions%29-2E5FD9?style=for-the-badge)
 ![Interfaces](https://img.shields.io/badge/Interfaces-8_CLI_commands_%2B_2_API_endpoints-6E86E8?style=for-the-badge)
-![Tests](https://img.shields.io/badge/Tests-54_passing-3DA35B?style=for-the-badge)
+![Tests](https://img.shields.io/badge/Tests-53_passing-3DA35B?style=for-the-badge)
 ![Offline demo](https://img.shields.io/badge/Offline_demo-Yes-F5C542?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-A0399B?style=for-the-badge)
 
@@ -113,7 +113,7 @@ gradguide gives each of these questions its own component. Loaders, a token-size
 | Offline mode | The hashing embedder and the echo chat model. All commands and all tests run with no key and no network |
 | Safety | No evidence means no chat model call. Citations point only to passages in the prompt. Passage text is neutralized. The query log is off by default |
 | Interfaces | The `gradguide` CLI (8 commands), a FastAPI service (`POST /ask`, `GET /health`) and a Streamlit UI |
-| Tests | **54** unit tests (`pytest`) |
+| Tests | **54** unit tests (`pytest`). CI: 53 passed, 1 skipped (`tests/test_app.py` needs Streamlit) |
 
 ```mermaid
 flowchart LR
@@ -777,7 +777,8 @@ All results come from the offline providers on the sample documents, measured on
 
 | Validation | Result | Command |
 |---|---|---|
-| Unit tests | **54 passed** (local, with the `api` and `ui` extras installed) | `pytest -q` |
+| Unit tests in CI (Python 3.11, `.[dev,api]`) | **53 passed, 1 skipped** (`tests/test_app.py` needs Streamlit) | `.github/workflows/ci.yml` |
+| Unit tests (local, with the `api` and `ui` extras) | **54 passed** | `pytest -q` |
 | Index sync | `34 chunks embedded, 0 reused, 0 removed`, 7 sources, `hashing-v1-384` | `gradguide index` |
 | Index reuse | `index up to date (34 chunks); nothing re-embedded` | `gradguide index` |
 | Grounded answer | Citation [1] from `faq_financial_aid.json` with "March 15" | `gradguide ask "When is the FAFSA priority deadline?"` |
